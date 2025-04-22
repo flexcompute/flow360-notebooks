@@ -143,6 +143,10 @@ def main():
 
         total_notebooks_input = len(args.notebooks)
         print(f"\n---\nChecked {total_notebooks_input} notebook(s). " + " ".join(summary_lines))
+
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            print("spell_error_found=true", file=f)
+
         sys.exit(1)
     else:
         total_notebooks_input = len(args.notebooks)

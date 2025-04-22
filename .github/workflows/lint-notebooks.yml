@@ -76,3 +76,10 @@ jobs:
           comment-id: ${{ steps.find_comment.outputs.comment-id }}
           body-path: comment_body.txt
           edit-mode: replace
+
+      - name: Determine success on spelchecking errors
+        if: steps.spellcheck.outputs.spell_error_found == 'true'
+        uses: actions/github-script@v3
+        with:
+          script: |
+              core.setFailed('Found issues with spelling')
