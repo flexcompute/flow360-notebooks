@@ -2,6 +2,6 @@
 skip = .git,*.pdf,*.png,*.jpg,*.jpeg,*.gif,*.svg,*.bmp,*.tiff,*.pyc,venv,.venv,.ipynb_checkpoints
 check-filenames = true
 quiet-level = 2
-ignore-words-list = flexcompute,flow360,TE,TM,te,tm,FOM,fom,Commun,Thru
+ignore-words-list = flexcompute,flow360,CL,CD,CMy,CFD,API,CFx,CFz,CFy
 ignore-regex = [a-f0-9]{40}
 builtin = clear,rare,informal 
