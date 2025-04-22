@@ -77,7 +77,7 @@ jobs:
           body-path: comment_body.txt
           edit-mode: replace
 
-      - name: Determine success on spelchecking errors
+      - name: Determine success on spellchecking errors
         if: steps.spellcheck.outputs.spell_error_found == 'true'
         uses: actions/github-script@v3
         with:
