@@ -29,6 +29,7 @@ ignore = [
     "E722",   # we'll allow bare excepts in notebooks
     "E731",   # allow lambda assignment
     "F401",   # imported but unused (common in notebooks for exploration)
+    "F403",   # unable to detect undefined names (when using from x import *)
     "NPY201", # allow numpy<2 for now
     "UP006",  # type annotation with Tuple[float] messes up pydantic
     "UP007",  # use x | y instead of union[x,y] (does not work)
